@@ -1,0 +1,222 @@
+:root{
+  ### Primary;
+
+--LightRed: hsl(0, 100%, 67%);
+--Orangeyyellow: hsl(39, 100%, 56%);
+--Greenteal: hsl(166, 100%, 37%);
+--Cobaltblue: hsl(234, 85%, 45%);
+
+## Gradients;
+
+--Lightslateblue: hsl(252, 100%, 67%);
+--LightRoyalblue: hsl(241, 81%, 54%);
+
+--Violetblue: hsla(256, 72%, 46%, 1);
+--Persianblue: hsla(241, 72%, 46%, 0);
+
+
+
+### Neutral;
+
+--White: hsl(0, 0%, 100%);
+--Paleblue: hsl(221, 100%, 96%);
+--Lightlavender: hsl(241, 100%, 89%);
+--Darkgrayblue: hsl(224, 30%, 27%);
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body{
+  height: 100%;
+  width: 100%;
+}
+body{
+  font-family: "Hanken Grotesk", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.main_area{
+  background: var(--White);
+  width: 620px;
+  display: flex;
+}
+.child_area_left{
+  background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+  padding: 30px;
+  width: 50%;
+  text-align: center;
+  border-radius: 20px;
+}
+.child_area_left h3{
+  color: var(--Lightlavender);
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.circle{
+  width: 150px;
+  height: 150px;
+  margin: auto;
+  background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+.circle h1{
+  color: var(--White);
+  font-size: 35px;
+  font-weight: 800;
+}
+.circle span{
+  color: var(--Lightlavender);
+  font-size: 12px;
+}
+.child_area_left h2{
+  color: var(--White);
+  font-family: 400;
+  font-size: 20px;
+  margin-bottom: 0;
+}
+.child_area_left p{
+  color: var(--Lightlavender);
+  font-size: 14px;
+  padding: 10px 25px;
+  font-weight: normal;
+}
+.child_area_right{
+  width: 50%;
+  padding: 30px;
+  box-shadow: 10px 10px 15px hsl(224, 36%, 85%);
+  border-radius: 0 20px 20px 0;
+}
+.child_area_right h3{
+  color: var(--Darkgrayblue);
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+.marks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  
+}
+.marks img{
+  margin-right: 10px;
+  display: block;
+  
+}
+.marks p{
+ ;
+  
+}
+.marks h4{
+ color: var(--Darkgrayblue);
+ font-size: 15px;
+
+}
+.marks h4 span{
+ color: #a09696;
+
+}
+.marks .sub{
+  display: flex;
+}
+
+
+.child_area_right .marks:nth-child(2){
+  background: hsl(0, 32%, 92%);
+}
+.child_area_right .marks:nth-child(2) p{
+  color: hsl(0, 100%, 67%);
+}
+.child_area_right .marks:nth-child(3){
+background: hsl(38, 70%, 95%);
+}
+.child_area_right .marks:nth-child(3) p{
+color: hsl(39, 100%, 56%);
+}
+.child_area_right .marks:nth-child(4){
+  background: hsl(167, 17%, 90%);
+}
+.child_area_right .marks:nth-child(4) p{
+  color: hsl(166, 100%, 37%);
+}
+.child_area_right .marks:nth-child(5){
+  background: hsl(235, 70%, 94%);
+}
+.child_area_right .marks:nth-child(5) p{
+  color: hsl(234, 85%, 45%);
+  
+}
+button{
+  margin-top: 20px;
+  width: 100%;
+  padding: 15px;
+  border-radius: 50px;
+  border: none;
+  background: var(--Darkgrayblue);
+  color: var(--White);
+}
+.attribution{
+  margin-top: 15px;
+}
+.attribution a{
+  text-decoration: none;
+  color: var(--LightRoyalblue);
+  font-size: 17px;
+  font-weight: bold;
+}
+.attribution a:hover{
+  text-decoration: underline;
+}
+@media screen and (max-width: 720px){
+  body{
+    justify-content: flex-start;
+  }
+  .main_area{
+    width: 90%;
+    flex-direction: column;
+    display: block;
+    margin: auto;
+  }
+
+  .child_area_left{
+    background-image: linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    padding: 30px;
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+  }
+  .child_area_left p{
+    font-size: 18px;
+  }
+  .child_area_right{
+    width: 100%;
+    border-radius: 0 0 20px 20px;
+  }
+  .attribution{
+    text-align-last: center;
+    flex-grow: 1;
+  }
+}
+@media screen and (max-width: 375px){
+  .main_area{
+    width: 100%;
+    height: 100%;
+  }
+}
